@@ -1,2 +1,3 @@
-const eat = food => {return food + ' tasted really good.';};
-console.log(eat('bananas'));
+const eat = (food) => food + ' tasted really good.'
+
+console.log(eat('bananas'))

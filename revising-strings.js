@@ -1,4 +1,4 @@
-let pizza = 'pizza is alright';
-console.log(
-  pizza.replace('alright','wonderful')
-);
+// Check out the 'string'.method syntax
+const pizza = 'pizza is alright'.replace('alright', 'wonderful')
+
+console.log(pizza)
