@@ -1,0 +1,24 @@
+{
+  "name": "javascripting-project",
+  "version": "1.0.0",
+  "description": "git-it \t\t// course api",
+  "main": "accessing-array-values.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dubi911/javascripting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dubi911/javascripting/issues"
+  },
+  "homepage": "https://github.com/Dubi911/javascripting#readme",
+  "dependencies": {
+    "functional-javascript-workshop": "^1.0.6",
+    "javascripting": "^2.7.4"
+  }
+}
