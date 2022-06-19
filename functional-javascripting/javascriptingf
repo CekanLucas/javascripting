@@ -1,0 +1,14 @@
+#! /bin/bash
+
+# Note: not possible to set aliases within a shell script
+
+# if verify flag -v set
+if [ -z $1]; then
+  echo "verifying $1"
+  npx functional-javascript verify $1
+elif [ $1 ]; then
+  echo "running $1"
+  npx functional-javascript run $1
+else
+  npx functional-javascript
+fi
