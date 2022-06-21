@@ -5,15 +5,12 @@ A function that takes a function as its first argument, a number num as its seco
   * @param {number} num - the number of times to call `operation`
 */
 
-function repeat(operation, num) {
-  while (num < 1) {
-    num--
-    operation()
-  }
+// Now working with recursion
+module.exports = function repeat(operation, num) {
+  if(num!==0) repeat(operation, --num)
+  else operation() // else keyword optional here for readability
+  return 
 }
-
-// Do not remove the line below
-module.exports = repeat
 
 /* 
 
