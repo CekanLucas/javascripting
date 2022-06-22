@@ -2,13 +2,21 @@
 
 # Note: not possible to set aliases within a shell script
 
-# if verify flag -v set
-if [ -z $1]; then
-  echo "verifying $1"
-  npx functional-javascript verify $1
-elif [ $1 ]; then
-  echo "running $1"
-  npx functional-javascript run $1
+# Run this file to run functional javascript 
+# ./javascriptingf --> go to menu 
+# ./javascriptingf r myprogram.js --> run myprogram.js
+# ./javascriptingf v myprogram.js --> verify myprogram.js
+
+
+if [[ "$1" == "v" ]]; then
+  echo "verifying $2"
+  npx functional-javascript verify $2
+elif [[ "$1" == "r" ]]; then
+  echo "running $2"
+  npx functional-javascript run $2
 else
+  echo "list of all arguments: $@"
   npx functional-javascript
 fi
+
+# remember to npm i functional-javascript-workshop
