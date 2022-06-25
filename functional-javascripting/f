@@ -1,0 +1,22 @@
+#! /bin/bash
+
+# Note: not possible to set aliases within a shell script
+
+# Run this file to run functional javascript 
+# ./f --> go to menu 
+# ./f myprogram.js r--> run myprogram.js
+# ./f myprogram.js v--> verify myprogram.js
+
+
+if [[ "$2" == "v" ]]; then
+  echo "verifying $1"
+  npx functional-javascript verify $1
+elif [[ "$2" == "r" ]]; then
+  echo "running $1"
+  npx functional-javascript run $1
+else
+  echo "list of all arguments: $@"
+  npx functional-javascript
+fi
+
+# remember to npm i functional-javascript-workshop
