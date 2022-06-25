@@ -4,7 +4,8 @@
   "description": "git-it \t\t// course api",
   "main": "accessing-array-values.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "dependencies": {
     "functional-javascript-workshop": "^1.0.6",
     "javascripting": "^2.7.4"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.10"
   }
 }
